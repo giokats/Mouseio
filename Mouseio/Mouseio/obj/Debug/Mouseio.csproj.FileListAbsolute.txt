@@ -1,0 +1,12 @@
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\bin\Debug\Mouseio.exe.config
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\bin\Debug\Mouseio.exe
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\bin\Debug\Mouseio.pdb
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\obj\Debug\Mouseio.csprojResolveAssemblyReference.cache
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\obj\Debug\Mouseio.Form1.resources
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\obj\Debug\Mouseio.Properties.Resources.resources
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\obj\Debug\Mouseio.csproj.GenerateResource.Cache
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\obj\Debug\Mouseio.exe
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\obj\Debug\Mouseio.pdb
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\obj\Debug\Mouseio.Form2.resources
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\obj\Debug\Mouseio.Form3.resources
+C:\Users\George\Documents\Visual Studio 2013\Projects\C#\Mouseio\Mouseio\obj\Debug\Mouseio.Form4.resources

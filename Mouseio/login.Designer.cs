@@ -130,6 +130,7 @@
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.labelWelcome);
             this.Name = "login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Είσοδος Χρήστη";
             this.ResumeLayout(false);
             this.PerformLayout();

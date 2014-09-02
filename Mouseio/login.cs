@@ -28,15 +28,21 @@ namespace Mouseio
         // και ένα τυχαίο κωδικό μήκους 8 χαρακτήρων
         private void buttonConnection_Click(object sender, EventArgs e)
         {
-            if (textBoxUserName.Text.Length == 0)
-            { MessageBox.Show("Λάθος όνομα!"); }
+            if (textBoxCode.Text == "Πληκτρολογήστε τον κωδικό σας" || textBoxCode.Text == "Πληκτρολογήστε τον κωδικό σας")
+            {
+                MessageBox.Show("Παρακαλώ συμπληρώστε και τα δύο πεδία!"); 
+            }
+            else if (textBoxUserName.Text.Length == 0)
+            { 
+                MessageBox.Show("Λάθος όνομα!"); 
+            }
             else if (textBoxCode.Text.Length < 8)
             {
                 MessageBox.Show("Λάθος κωδικός!");
             }
             else
             {
-                Form2 myform = new Form2();
+                choice myform = new choice();
                 this.Hide();
                 myform.ShowDialog();
                 this.Show();
@@ -45,6 +51,7 @@ namespace Mouseio
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
+            this.Close();
             Application.Exit();
         }
 

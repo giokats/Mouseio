@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace Mouseio
 {
-    public partial class Form2 : Form
+    public partial class choice : Form
     {
         // Music Player variable. Για να μην έχουμε απόλυτα μονοπάτια θα πρέπει να προστίθενται
         // οι τυχόν επιλογές στο Resources.resx
         private System.Media.SoundPlayer music_player = new System.Media.SoundPlayer(Mouseio.Properties.Resources.The_More_I_Want);
   
 
-        public Form2()
+        public choice()
         {
             InitializeComponent();
-        }
-
-        private void μενούToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            music_player.Play();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,33 +39,28 @@ namespace Mouseio
             this.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
-            this.DialogResult = DialogResult.OK;
-        }
 
-        private void εμπρόςToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {          
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
             music_player.Play();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void buttonStop_Click(object sender, EventArgs e)
+        {
+            music_player.Stop();
+        }
+
+        private void choice_FormClosed(object sender, FormClosedEventArgs e)
         {
             music_player.Stop();
         }

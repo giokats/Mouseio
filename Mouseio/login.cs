@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace Mouseio
 {
-    public partial class Form1 : Form
+    public partial class login : Form
     {
-        public Form1()
+        private ChangeColor colors = new ChangeColor();
+
+
+        public login()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void buttonConnection_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text.Length == 0)
+            if (textBoxUserName.Text.Length == 0)
             { MessageBox.Show("Λάθος όνομα!"); }
-            else if(textBox2.Text.Length<8)
+            else if (textBoxCode.Text.Length < 8)
             {
                 MessageBox.Show("Λάθος κωδικός!");
             }
@@ -39,9 +37,16 @@ namespace Mouseio
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            labelWelcome.ForeColor = colors.returnColor();
+            colors.changeColor();
+        }
+
     }
 }

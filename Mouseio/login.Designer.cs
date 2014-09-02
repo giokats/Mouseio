@@ -91,6 +91,7 @@
             // 
             // buttonConnection
             // 
+            this.buttonConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.buttonConnection.Location = new System.Drawing.Point(465, 361);
             this.buttonConnection.Name = "buttonConnection";
             this.buttonConnection.Size = new System.Drawing.Size(125, 54);
@@ -101,6 +102,7 @@
             // 
             // buttonExit
             // 
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.buttonExit.Location = new System.Drawing.Point(596, 361);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(125, 54);

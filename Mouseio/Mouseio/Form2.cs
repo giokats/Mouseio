@@ -12,6 +12,11 @@ namespace Mouseio
 {
     public partial class Form2 : Form
     {
+        // Music Player variable. Για να μην έχουμε απόλυτα μονοπάτια θα πρέπει να προστίθενται
+        // οι τυχόν επιλογές στο Resources.resx
+        private System.Media.SoundPlayer music_player = new System.Media.SoundPlayer(Mouseio.Properties.Resources.The_More_I_Want);
+  
+
         public Form2()
         {
             InitializeComponent();
@@ -60,15 +65,13 @@ namespace Mouseio
         }
 
         private void button5_Click(object sender, EventArgs e)
-        {
-            System.Media.SoundPlayer pl = new System.Media.SoundPlayer(@"C:\Users\George\Desktop\Music\The More I Want.wav");
-            pl.Play();
+        {          
+            music_player.Play();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer pl = new System.Media.SoundPlayer(@"C:\Users\George\Desktop\Music\The More I Want.wav");
-            pl.Stop();
+            music_player.Stop();
         }
     }
 }

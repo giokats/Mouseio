@@ -38,9 +38,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(95, 189);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button1.Location = new System.Drawing.Point(91, 101);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 44);
+            this.button1.Size = new System.Drawing.Size(125, 54);
             this.button1.TabIndex = 1;
             this.button1.Text = "Ελληνικές Παραλίες";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(305, 189);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button2.Location = new System.Drawing.Point(267, 101);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 44);
+            this.button2.Size = new System.Drawing.Size(125, 54);
             this.button2.TabIndex = 2;
             this.button2.Text = "Παραλίες Εξωτερικού";
             this.button2.UseVisualStyleBackColor = true;
@@ -113,7 +115,7 @@
             this.Controls.Add(this.button1);
             this.Name = "choice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Παραλίες";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.choice_FormClosed);
             this.ResumeLayout(false);
 

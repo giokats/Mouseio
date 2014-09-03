@@ -25,7 +25,7 @@ namespace Mouseio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 myform = new Form3();
+            greek_beaches myform = new greek_beaches();
             this.Hide();
             myform.ShowDialog();
             this.Show();

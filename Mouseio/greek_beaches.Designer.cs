@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(greek_beaches));
             this.textBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.label = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Button();
@@ -47,29 +45,10 @@
             this.textBox.Location = new System.Drawing.Point(391, 82);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
+            this.textBox.ReadOnly = true;
             this.textBox.Size = new System.Drawing.Size(319, 234);
             this.textBox.TabIndex = 0;
             this.textBox.Text = resources.GetString("textBox.Text");
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1107, 839);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Έξοδος";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(993, 839);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Πίσω";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox
             // 
@@ -85,7 +64,7 @@
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label.Location = new System.Drawing.Point(290, 23);
+            this.label.Location = new System.Drawing.Point(258, 23);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(154, 20);
             this.label.TabIndex = 14;
@@ -156,11 +135,10 @@
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.label);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.textBox);
             this.Name = "greek_beaches";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ελληνικές Παραλίες";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -172,8 +150,6 @@
 
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.PictureBox pictureBox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonLogOut;

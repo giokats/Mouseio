@@ -150,10 +150,10 @@
     <None Include="Resources\egremni_beach.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\The More I Want.wav" />
+    <None Include="Resources\stop.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\stop.png" />
+    <None Include="Resources\song.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

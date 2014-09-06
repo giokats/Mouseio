@@ -14,7 +14,7 @@ namespace Mouseio
     {
         // Music Player variable. Για να μην έχουμε απόλυτα μονοπάτια θα πρέπει να προστίθενται
         // οι τυχόν επιλογές στο Resources.resx
-        private System.Media.SoundPlayer music_player = new System.Media.SoundPlayer(Mouseio.Properties.Resources.The_More_I_Want);
+        private System.Media.SoundPlayer music_player = new System.Media.SoundPlayer(Mouseio.Properties.Resources.song);
   
 
         public choice()

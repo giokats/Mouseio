@@ -37,7 +37,14 @@
             this.buttonNext = new System.Windows.Forms.Button();
             this.labelNum = new System.Windows.Forms.Label();
             this.buttonPrevious = new System.Windows.Forms.Button();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItemSaveButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemSaveText = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemSaveImage = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialogText = new System.Windows.Forms.SaveFileDialog();
+            this.saveFileDialogImage = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox
@@ -124,6 +131,49 @@
             this.buttonPrevious.UseVisualStyleBackColor = true;
             this.buttonPrevious.Click += new System.EventHandler(this.buttonPrevious_Click);
             // 
+            // menuStrip
+            // 
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemSaveButton});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(733, 24);
+            this.menuStrip.TabIndex = 20;
+            this.menuStrip.Text = "menuStrip";
+            // 
+            // ToolStripMenuItemSaveButton
+            // 
+            this.ToolStripMenuItemSaveButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemSaveText,
+            this.ToolStripMenuItemSaveImage});
+            this.ToolStripMenuItemSaveButton.Name = "ToolStripMenuItemSaveButton";
+            this.ToolStripMenuItemSaveButton.Size = new System.Drawing.Size(88, 20);
+            this.ToolStripMenuItemSaveButton.Text = "Αποθήκευση";
+            // 
+            // ToolStripMenuItemSaveText
+            // 
+            this.ToolStripMenuItemSaveText.Name = "ToolStripMenuItemSaveText";
+            this.ToolStripMenuItemSaveText.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItemSaveText.Text = "Κειμένου";
+            this.ToolStripMenuItemSaveText.Click += new System.EventHandler(this.ToolStripMenuItemSaveText_Click);
+            // 
+            // ToolStripMenuItemSaveImage
+            // 
+            this.ToolStripMenuItemSaveImage.Name = "ToolStripMenuItemSaveImage";
+            this.ToolStripMenuItemSaveImage.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItemSaveImage.Text = "Εικόνας";
+            this.ToolStripMenuItemSaveImage.Click += new System.EventHandler(this.ToolStripMenuItemSaveImage_Click);
+            // 
+            // saveFileDialogText
+            // 
+            this.saveFileDialogText.DefaultExt = "txt";
+            this.saveFileDialogText.Filter = "Text files|*.txt|All files|*.*";
+            // 
+            // saveFileDialogImage
+            // 
+            this.saveFileDialogImage.DefaultExt = "jpeg";
+            this.saveFileDialogImage.Filter = "Jpeg files|*.jpeg|All files|*.*";
+            // 
             // greek_beaches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,10 +187,14 @@
             this.Controls.Add(this.label);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.textBox);
+            this.Controls.Add(this.menuStrip);
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "greek_beaches";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ελληνικές Παραλίες";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +210,11 @@
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.Label labelNum;
         private System.Windows.Forms.Button buttonPrevious;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSaveButton;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogText;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSaveText;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSaveImage;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogImage;
     }
 }

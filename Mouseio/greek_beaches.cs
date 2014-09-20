@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.IO;
+
 namespace Mouseio
 {
     public partial class greek_beaches : Form
@@ -84,6 +86,29 @@ namespace Mouseio
             {
                 buttonPrevious.Enabled = true;
             }
+        }
+
+
+        private void ToolStripMenuItemSaveText_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.OK == saveFileDialogText.ShowDialog())
+            {
+                string beach_string = textBox.Text;
+                using (StreamWriter beach_file = new StreamWriter(File.Create(saveFileDialogText.FileName)))
+                {
+                    beach_file.Write(beach_string);
+                }
+
+            }
+        }
+
+        private void ToolStripMenuItemSaveImage_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.OK == saveFileDialogImage.ShowDialog())
+            {
+                pictureBox.Image.Save(saveFileDialogImage.FileName);
+            }
+            
         }
     }
 }

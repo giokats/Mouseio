@@ -44,7 +44,7 @@ namespace Mouseio
             {
                 try
                 {
-                    choice myform = new choice();
+                    choice myform = new choice(this);
                     this.Hide();
                     myform.Location = this.Location;
                     myform.ShowDialog();

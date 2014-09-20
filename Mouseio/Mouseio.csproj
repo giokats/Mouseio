@@ -46,6 +46,12 @@
   <ItemGroup>
     <Compile Include="Beach.cs" />
     <Compile Include="ChangeColor.cs" />
+    <Compile Include="foreign_beaches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foreign_beaches.Designer.cs">
+      <DependentUpon>foreign_beaches.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,12 +70,6 @@
     <Compile Include="greek_beaches.Designer.cs">
       <DependentUpon>greek_beaches.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="login.resx">
@@ -80,9 +80,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="greek_beaches.resx">
       <DependentUpon>greek_beaches.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

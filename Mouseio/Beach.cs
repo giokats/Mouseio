@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Mouseio
 {
     // A class that describes the beaches used in greek_beaches form
-    class Beach
+    public class Beach
     {
         private string name_;
         private System.Drawing.Image image_;
@@ -18,6 +18,13 @@ namespace Mouseio
             setName(name);
             setImage(image);
             setDescription(description);
+        }
+
+        public Beach (Beach new_beach)
+        {
+            setName(new_beach.getName());
+            setImage(new_beach.getImage());
+            setDescription(new_beach.getDescription());
         }
         public string getName()
         {

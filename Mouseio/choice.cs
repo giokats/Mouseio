@@ -33,7 +33,7 @@ namespace Mouseio
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form4 myform = new Form4();
+            foreign_beaches myform = new foreign_beaches();
             this.Hide();
             myform.ShowDialog();
             this.Show();

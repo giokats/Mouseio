@@ -153,14 +153,14 @@
             // ToolStripMenuItemSaveText
             // 
             this.ToolStripMenuItemSaveText.Name = "ToolStripMenuItemSaveText";
-            this.ToolStripMenuItemSaveText.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItemSaveText.Size = new System.Drawing.Size(121, 22);
             this.ToolStripMenuItemSaveText.Text = "Κειμένου";
             this.ToolStripMenuItemSaveText.Click += new System.EventHandler(this.ToolStripMenuItemSaveText_Click);
             // 
             // ToolStripMenuItemSaveImage
             // 
             this.ToolStripMenuItemSaveImage.Name = "ToolStripMenuItemSaveImage";
-            this.ToolStripMenuItemSaveImage.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItemSaveImage.Size = new System.Drawing.Size(121, 22);
             this.ToolStripMenuItemSaveImage.Text = "Εικόνας";
             this.ToolStripMenuItemSaveImage.Click += new System.EventHandler(this.ToolStripMenuItemSaveImage_Click);
             // 

@@ -42,16 +42,22 @@ namespace Mouseio
             }
             else
             {
-                choice myform = new choice();
-                this.Hide();
-                myform.ShowDialog();
-                this.Show();
+                try
+                {
+                    choice myform = new choice();
+                    this.Hide();
+                    myform.ShowDialog();
+                    this.Show();
+                }
+                catch(InvalidCastException exception)
+                {
+
+                }
             }
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            this.Close();
             Application.Exit();
         }
 

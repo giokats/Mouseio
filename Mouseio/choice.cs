@@ -23,22 +23,6 @@ namespace Mouseio
             music_player.Play();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            greek_beaches myform = new greek_beaches();
-            this.Hide();
-            myform.ShowDialog();
-            this.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            foreign_beaches myform = new foreign_beaches();
-            this.Hide();
-            myform.ShowDialog();
-            this.Show();
-        }
-
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
@@ -63,6 +47,24 @@ namespace Mouseio
         private void choice_FormClosed(object sender, FormClosedEventArgs e)
         {
             music_player.Stop();
+        }
+
+        private void buttonGreekBeaches_Click(object sender, EventArgs e)
+        {
+            greek_beaches myform = new greek_beaches();
+            this.Hide();
+            myform.Location = this.Location;
+            myform.ShowDialog();
+            this.Show();
+        }
+
+        private void buttonForeignBeaches_Click(object sender, EventArgs e)
+        {
+            foreign_beaches myform = new foreign_beaches();
+            this.Hide();
+            myform.Location = this.Location;
+            myform.ShowDialog();
+            this.Show();
         }
 
     }

@@ -120,4 +120,13 @@
   <data name="textBox.Text" xml:space="preserve">
     <value>Αυτή η παραλία, βρίσκεται στο βορειοδυτικό τμήμα της Κεφαλονιάς, στην περιοχή της Πυλάρου. Η παραλία βρίσκεται ανάμεσα στους πρόποδες των δύο βουνών, Αγία Δυνατή και Καλόν Όρος. Η Μύρτος είναι παγκοσμίως γνωστή για τις μαγικές αποχρώσεις των χρωμάτων του νερού (του ανοιχτού μπλε, του σκούρου μπλε, του πράσινου-μπλε και του τιρκουάζ) σε αντίθεση με το φωτεινό λευκό των λείων βότσαλων. Το βράδυ, όταν ο ήλιος είναι στον ορίζοντα και καθώς ο ήλιος χάνεται, το νερό είναι χρωματισμένο με υπέροχα χρώματα (κόκκινο, κίτρινο, μωβ, πορτοκαλί). Τα απόκρημνα βουνά και το όμορφο περιβάλλον σχηματίζουν ένα μαγικό και εποβλητικό τοπίο.</value>
   </data>
+  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="saveFileDialogText.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>125, 17</value>
+  </metadata>
+  <metadata name="saveFileDialogImage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>261, 17</value>
+  </metadata>
 </root>

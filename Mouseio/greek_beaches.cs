@@ -15,7 +15,7 @@ namespace Mouseio
     public partial class greek_beaches : Form
     {
 
-        protected uint beaches_num = 6;
+        protected uint beaches_num;
         protected uint beaches_current;
 
         protected Beach[] beaches;
@@ -39,6 +39,7 @@ namespace Mouseio
         protected void initiliazeBeach()
         {
             beaches_current = 0;
+            beaches_num = (uint) beaches.GetLength(0);
             pictureBox.Image = beaches[0].getImage();
             textBox.Text = beaches[0].getDescription();
             label.Text = beaches[0].getName();

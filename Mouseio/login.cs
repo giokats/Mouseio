@@ -50,7 +50,7 @@ namespace Mouseio
                     myform.ShowDialog();
                     this.Show();
                 }
-                catch(InvalidCastException exception)
+                catch (ObjectDisposedException exception)
                 {
 
                 }
